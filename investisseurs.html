@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KTech WiFi — Dossier investisseurs</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="confidential-banner">Document interne confidentiel — ne pas diffuser sans l'accord de KTech WiFi</p>
+
+<!-- ÉCRAN D'ACCÈS -->
+<div class="gate" id="gate">
+  <div class="gate-box">
+    <p class="kicker">Accès restreint</p>
+    <h2>Dossier investisseurs</h2>
+    <p>Ce document contient les projections financières de KTech WiFi. Merci de saisir le code transmis par l'équipe.</p>
+    <div class="gate-form">
+      <input type="password" id="gate-code" placeholder="Code d'accès" autocomplete="off">
+      <button type="button" class="btn btn-primary" id="gate-submit">Accéder au dossier</button>
+      <p class="gate-error" id="gate-error" hidden>Code incorrect — réessayez.</p>
+    </div>
+    <p class="gate-hint">Pas de code&nbsp;? Écrivez à <a href="mailto:angekalenga@gmail.com" style="color:var(--teal)">angekalenga@gmail.com</a></p>
+  </div>
+</div>
+
+<!-- DOCUMENT -->
+<div id="doc" hidden>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 100 100"><circle cx="50" cy="72" r="9" fill="var(--gold)"/><path d="M28 54 A32 32 0 0 1 72 54" stroke="var(--teal)" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M12 36 A54 54 0 0 1 88 36" stroke="var(--teal)" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.5"/></svg>
+        </span>
+        <span class="brand-name">KTech<span class="brand-name-accent">WiFi</span></span>
+      </a>
+      <a href="index.html" class="back-link">← Retour au site public</a>
+    </div>
+  </header>
+
+  <p class="gate-welcome" id="gate-welcome" hidden></p>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" style="padding:64px 0 40px;">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Dossier investisseurs · Confidentiel</p>
+        <h1 style="font-size:clamp(1.9rem,4.5vw,3rem);">Le dossier financier de KTech WiFi.</h1>
+        <p class="hero-sub">Hypothèses, CAPEX, projections sur 3 ans et scénario prudent — pour évaluer sereinement l'opportunité KTech WiFi. Basé sur le business plan v4.1 et le modèle financier v3.3.</p>
+
+        <dl class="exec-stats">
+          <div class="exec-stat">
+            <dt>Investissement initial (Phase 1a)</dt>
+            <dd class="mono">18 800 <small style="font-size:1rem;color:var(--text-muted-dark);">USD</small></dd>
+          </div>
+          <div class="exec-stat">
+            <dt>EBITDA trimestriel positif dès</dt>
+            <dd class="mono">T2 2027</dd>
+          </div>
+          <div class="exec-stat">
+            <dt>Clients projetés — fin Année 3</dt>
+            <dd class="mono">1 500 <small style="font-size:1rem;color:var(--text-muted-dark);">(scén. favorable)</small></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- RÉSUMÉ EXÉCUTIF -->
+    <section class="section section-paper">
+      <div class="wrap">
+        <p class="kicker">Résumé exécutif</p>
+        <h2>Occuper l'espace entre le mobile et la fibre, quartier par quartier.</h2>
+        <p class="section-lead">KTech WiFi est un WISP (fournisseur d'accès Internet radio) qui démarre par un site pilote à Limete Salongo, Kinshasa, avant une extension phasée financée par les marges dégagées à chaque étape — sans recours à l'emprunt. L'investissement de démarrage couvre un site relais complet, alimenté au solaire pour rester actif malgré les délestages électriques fréquents dans la ville.</p>
+      </div>
+    </section>
+
+    <!-- MARCHÉ -->
+    <section class="section section-ink">
+      <div class="wrap">
+        <p class="kicker">Le marché</p>
+        <h2>Un écart de connectivité mesurable, à Kinshasa même.</h2>
+        <div class="gap-grid" style="margin-top:32px;">
+          <div class="gap-visual" aria-hidden="true">
+            <div class="gap-bar">
+              <div class="gap-bar-fill mobile"><span>59%</span></div>
+              <p class="gap-label" style="color:var(--text-muted-dark);">Pénétration mobile (RDC)</p>
+            </div>
+            <div class="gap-bar">
+              <div class="gap-bar-fill internet"><span>30%</span></div>
+              <p class="gap-label" style="color:var(--text-muted-dark);">Usage Internet réel</p>
+            </div>
+          </div>
+          <div class="gap-copy">
+            <p style="color:var(--text-on-dark);">Kinshasa compte environ 21,9 millions d'habitants. La couverture mobile y est quasi générale, mais l'usage Internet réel reste très en retrait — faute d'offre fixe stable et abordable dans les quartiers denses non couverts par la fibre.</p>
+            <p>C'est cet écart, entre l'offre mobile grand public et l'offre fibre haut de gamme, que KTech WiFi vise à combler à l'échelle d'un quartier, avant d'étendre le modèle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODÈLE ÉCONOMIQUE -->
+    <section class="section section-paper">
+      <div class="wrap">
+        <p class="kicker">Modèle économique</p>
+        <h2>Grille tarifaire et revenu moyen par client.</h2>
+        <p class="section-lead">Tarifs de travail, à confirmer par un test terrain avant lancement commercial.</p>
+
+        <table class="data-table">
+          <thead>
+            <tr><th>Offre</th><th class="num">Prix / mois</th><th class="num">Part de la gamme</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Résidentiel — Essentiel</td><td class="num">10 USD</td><td class="num">40 %</td></tr>
+            <tr><td>Résidentiel — Standard</td><td class="num">18 USD</td><td class="num">40 %</td></tr>
+            <tr><td>Résidentiel — Premium</td><td class="num">30 USD</td><td class="num">20 %</td></tr>
+            <tr><td>Pro — Starter</td><td class="num">45 USD</td><td class="num">60 %</td></tr>
+            <tr><td>Pro — Business</td><td class="num">90 USD</td><td class="num">30 %</td></tr>
+            <tr><td>Pro — Enterprise</td><td class="num">≈150 USD*</td><td class="num">10 %</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.85rem;color:var(--text-muted-light);">* Moyenne sur devis, offre sur mesure.</p>
+
+        <div class="exec-stats" style="margin-top:12px;">
+          <div class="exec-stat" style="border-color:var(--paper-line);">
+            <dt style="color:var(--text-muted-light);">ARPU résidentiel</dt>
+            <dd class="mono" style="color:var(--text-on-light);">17,20 USD</dd>
+          </div>
+          <div class="exec-stat" style="border-color:var(--paper-line);">
+            <dt style="color:var(--text-muted-light);">ARPU professionnel</dt>
+            <dd class="mono" style="color:var(--text-on-light);">69 USD</dd>
+          </div>
+          <div class="exec-stat" style="border-color:var(--paper-line);">
+            <dt style="color:var(--text-muted-light);">ARPU global pondéré</dt>
+            <dd class="mono" style="color:var(--text-on-light);">30,15 USD</dd>
+          </div>
+        </div>
+        <p style="font-size:0.85rem;color:var(--text-muted-light);margin-top:8px;">Mix de clientèle retenu : 75 % résidentiel / 25 % professionnel.</p>
+      </div>
+    </section>
+
+    <!-- CAPEX -->
+    <section class="section section-ink">
+      <div class="wrap">
+        <p class="kicker">Investissement initial — Phase 1a</p>
+        <h2>18 800 USD pour mettre le site pilote en service.</h2>
+        <p class="section-lead">Estimation de travail ; devis fournisseurs réels à obtenir avant engagement (antennes, CPE, kit solaire, bande passante de gros).</p>
+
+        <table class="data-table">
+          <thead><tr><th>Poste</th><th class="num">Montant</th></tr></thead>
+          <tbody>
+            <tr><td>Site POP + relais (mât, installation)</td><td class="num">2 500 USD</td></tr>
+            <tr><td>Antennes secteur PtMP</td><td class="num">1 200 USD</td></tr>
+            <tr><td>Équipements cœur (routeur / switch)</td><td class="num">1 000 USD</td></tr>
+            <tr><td>Kit solaire + batteries + onduleur</td><td class="num">1 800 USD</td></tr>
+            <tr><td>Stock CPE clients (≈ 60 unités)</td><td class="num">2 700 USD</td></tr>
+            <tr><td>Câblage / installation</td><td class="num">800 USD</td></tr>
+            <tr><td>Plateforme abonnés / facturation</td><td class="num">500 USD</td></tr>
+            <tr><td>Bande passante — caution + 1er mois</td><td class="num">1 500 USD</td></tr>
+            <tr><td>Démarches administratives (RCCM, NIF, ARPTC)</td><td class="num">800 USD</td></tr>
+            <tr><td>Fonds de roulement initial (3 mois)</td><td class="num">4 500 USD</td></tr>
+            <tr><td>Imprévus</td><td class="num">1 500 USD</td></tr>
+          </tbody>
+          <tfoot><tr><td>Total CAPEX initial</td><td class="num">18 800 USD</td></tr></tfoot>
+        </table>
+        <p style="font-size:0.85rem;color:var(--text-muted-dark);">Amortissement linéaire sur 3 ans.</p>
+      </div>
+    </section>
+
+    <!-- CHARGES -->
+    <section class="section section-paper">
+      <div class="wrap">
+        <p class="kicker">Charges d'exploitation</p>
+        <h2>Deux hypothèses de charges, favorable et prudente.</h2>
+        <div class="scenario-row">
+          <span class="label">Charges de base — T1 2027 (scénario favorable)</span>
+          <span class="value">1 500 USD / mois</span>
+        </div>
+        <div class="scenario-row">
+          <span class="label">Charges de base — T1 2027 (scénario prudent)</span>
+          <span class="value">1 900 USD / mois</span>
+        </div>
+        <div class="scenario-row">
+          <span class="label">Croissance trimestrielle des charges (favorable)</span>
+          <span class="value">8 %</span>
+        </div>
+        <div class="scenario-row">
+          <span class="label">Croissance trimestrielle des charges (prudent)</span>
+          <span class="value">11 %</span>
+        </div>
+        <p style="font-size:0.9rem;color:var(--text-muted-light);">Couvrent salaires de l'équipe pilote, bande passante, loyer du site, maintenance, marketing et administration.</p>
+      </div>
+    </section>
+
+    <!-- PROJECTIONS -->
+    <section class="section section-ink" id="projections">
+      <div class="wrap">
+        <p class="kicker">Projections financières</p>
+        <h2>Trois ans, deux scénarios.</h2>
+        <p class="section-lead">Le scénario prudent applique -35 % de clients par rapport au scénario favorable et des charges plus élevées ; la grille tarifaire et le CAPEX restent identiques dans les deux cas.</p>
+
+        <div class="pricing-tabs" role="tablist" aria-label="Choisir un scénario">
+          <button class="tab-btn is-active" role="tab" aria-selected="true" data-target="panel-favorable">Scénario favorable</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-target="panel-prudent">Scénario prudent</button>
+        </div>
+
+        <div id="panel-favorable">
+          <table class="data-table">
+            <thead><tr><th>Année</th><th class="num">Clients (fin)</th><th class="num">Chiffre d'affaires</th><th class="num">Charges</th><th class="num">EBITDA</th><th class="num">Résultat net</th></tr></thead>
+            <tbody>
+              <tr><td>Année 1 — 2027</td><td class="num">200</td><td class="num">36 180 USD</td><td class="num">20 278 USD</td><td class="num">15 902 USD</td><td class="num">9 636 USD</td></tr>
+              <tr><td>Année 2 — 2028</td><td class="num">700</td><td class="num">183 536 USD</td><td class="num">27 587 USD</td><td class="num">155 948 USD</td><td class="num">149 682 USD</td></tr>
+              <tr><td>Année 3 — 2029</td><td class="num">1 500</td><td class="num">424 960 USD</td><td class="num">37 532 USD</td><td class="num">387 427 USD</td><td class="num">381 161 USD</td></tr>
+            </tbody>
+          </table>
+
+          <p class="kicker" style="margin-top:32px;">Détail trimestriel — Année 1 (2027)</p>
+          <table class="data-table">
+            <thead><tr><th>Trimestre</th><th class="num">Clients</th><th class="num">CA</th><th class="num">Charges</th><th class="num">EBITDA</th></tr></thead>
+            <tbody>
+              <tr><td>T1 2027</td><td class="num">20</td><td class="num">1 809 USD</td><td class="num">4 500 USD</td><td class="num" style="color:var(--coral);">-2 691 USD</td></tr>
+              <tr><td>T2 2027</td><td class="num">60</td><td class="num">5 427 USD</td><td class="num">4 860 USD</td><td class="num" style="color:var(--teal);">+567 USD</td></tr>
+              <tr><td>T3 2027</td><td class="num">120</td><td class="num">10 854 USD</td><td class="num">5 249 USD</td><td class="num" style="color:var(--teal);">+5 605 USD</td></tr>
+              <tr><td>T4 2027</td><td class="num">200</td><td class="num">18 090 USD</td><td class="num">5 669 USD</td><td class="num" style="color:var(--teal);">+12 421 USD</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="panel-prudent" hidden>
+          <table class="data-table">
+            <thead><tr><th>Année</th><th class="num">Clients (fin)</th><th class="num">Chiffre d'affaires</th><th class="num">Charges</th><th class="num">EBITDA</th><th class="num">Résultat net</th></tr></thead>
+            <tbody>
+              <tr><td>Année 1 — 2027</td><td class="num">130</td><td class="num">23 362 USD</td><td class="num">26 845 USD</td><td class="num" style="color:var(--coral);">-3 484 USD</td><td class="num" style="color:var(--coral);">-9 751 USD</td></tr>
+              <tr><td>Année 2 — 2028</td><td class="num">455</td><td class="num">119 394 USD</td><td class="num">40 753 USD</td><td class="num">78 641 USD</td><td class="num">72 374 USD</td></tr>
+              <tr><td>Année 3 — 2029</td><td class="num">975</td><td class="num">276 415 USD</td><td class="num">61 866 USD</td><td class="num">214 549 USD</td><td class="num">208 282 USD</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.9rem;color:var(--text-muted-dark);margin-top:16px;">Dans ce scénario, l'Année 1 se termine en EBITDA légèrement négatif ; le point de bascule se déplace de plusieurs trimestres par rapport au scénario favorable (détail trimestriel disponible dans le modèle Excel).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARATIF -->
+    <section class="section section-paper">
+      <div class="wrap">
+        <p class="kicker">Comparatif des scénarios</p>
+        <h2>Ce que -35 % de clients change réellement.</h2>
+        <table class="data-table">
+          <thead><tr><th>Écart prudent − favorable</th><th class="num">Année 1</th><th class="num">Année 2</th><th class="num">Année 3</th></tr></thead>
+          <tbody>
+            <tr><td>Clients actifs</td><td class="num">-70</td><td class="num">-245</td><td class="num">-525</td></tr>
+            <tr><td>Chiffre d'affaires</td><td class="num">-12 818 USD</td><td class="num">-64 142 USD</td><td class="num">-148 544 USD</td></tr>
+            <tr><td>Charges d'exploitation</td><td class="num">+6 568 USD</td><td class="num">+13 166 USD</td><td class="num">+24 334 USD</td></tr>
+            <tr><td>EBITDA</td><td class="num">-19 386 USD</td><td class="num">-77 308 USD</td><td class="num">-172 879 USD</td></tr>
+          </tbody>
+        </table>
+
+        <div class="breakeven-note">
+          <p style="margin:0;"><strong>Seuil de rentabilité</strong> — Dans le scénario favorable, l'EBITDA trimestriel devient positif dès le T2 2027, autour de 60 clients actifs. Le scénario prudent décale ce seuil de plusieurs trimestres du fait de la croissance plus lente et de charges plus élevées.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEUILLE DE ROUTE -->
+    <section class="section section-ink">
+      <div class="wrap">
+        <p class="kicker">Feuille de route</p>
+        <h2>Croissance financée par les marges, phase par phase.</h2>
+        <ol class="roadmap" style="border-color:var(--ink-line);">
+          <li class="road-item is-current">
+            <div class="road-ring" aria-hidden="true"><span></span></div>
+            <div class="road-body"><p class="road-phase" style="color:var(--text-on-dark);">Phase 1a — Pilote · 2027</p><p class="road-detail" style="color:var(--text-muted-dark);">1 site relais · ~200 clients · validation du modèle</p></div>
+          </li>
+          <li class="road-item">
+            <div class="road-ring" aria-hidden="true"><span></span></div>
+            <div class="road-body"><p class="road-phase" style="color:var(--text-on-dark);">Phase 1b — Consolidation · 2028</p><p class="road-detail" style="color:var(--text-muted-dark);">3 à 5 sites · ~700 clients · lancement de l'offre Pro</p></div>
+          </li>
+          <li class="road-item">
+            <div class="road-ring" aria-hidden="true"><span></span></div>
+            <div class="road-body"><p class="road-phase" style="color:var(--text-on-dark);">Phase 2 — Extension · 2029</p><p class="road-detail" style="color:var(--text-muted-dark);">Nouvelles communes · ~1 500 clients</p></div>
+          </li>
+          <li class="road-item">
+            <div class="road-ring" aria-hidden="true"><span></span></div>
+            <div class="road-body"><p class="road-phase" style="color:var(--text-on-dark);">Phase 3 — Expansion · 2030–2032</p><p class="road-detail" style="color:var(--text-muted-dark);">8 à 10 communes · 15 000+ clients · étude d'une 2ᵉ ville</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- MÉTHODOLOGIE -->
+    <section class="section section-paper">
+      <div class="wrap">
+        <p class="kicker">Méthodologie &amp; limites</p>
+        <h2>Ce qui reste à confirmer avant tout engagement.</h2>
+        <p class="section-lead">Ce modèle est un outil de travail, construit sur des hypothèses estimées et non sur des devis fournisseurs confirmés.</p>
+        <ol class="meth-list">
+          <li>Confirmer la grille tarifaire par une étude de marché / un test tarifaire terrain.</li>
+          <li>Obtenir des devis réels pour le CAPEX auprès de fournisseurs d'équipement radio, solaire et de bande passante de gros.</li>
+          <li>Ajuster le rythme de croissance client à la lumière des premiers mois réels d'exploitation.</li>
+          <li>Réviser le facteur du scénario prudent (-35 % par défaut) une fois des données réelles disponibles.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FONDATEUR -->
+    <section class="section section-ink" id="fondateur">
+      <div class="wrap founder-grid">
+        <div class="founder-photo">
+          <img src="assets/fondateur.jpg" alt="Portrait d'Ange Kalenga Lumbala, fondateur de KTech WiFi" loading="lazy">
+        </div>
+        <div class="founder-copy">
+          <p class="kicker">Porteur du projet</p>
+          <h2>Ange Kalenga Lumbala</h2>
+          <p class="founder-title">Ingénieur informaticien — Kinshasa, RDC</p>
+          <p>Plus de quatre ans d'expérience en administration réseau et direction de départements techniques : Chef de Département Technique (Holduix), Chef d'Équipe Réseau Informatique (Sentech). Double formation technique (ESMICOM) et commerciale (Institut Supérieur de Commerce).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-paper" id="contact-invest">
+      <div class="wrap">
+        <p class="kicker">Pour aller plus loin</p>
+        <h2>Business plan complet et modèle Excel disponibles sur demande.</h2>
+        <ul class="contact-list">
+          <li><strong>Email</strong> <a href="mailto:angekalenga@gmail.com">angekalenga@gmail.com</a></li>
+          <li><strong>WhatsApp</strong> <a href="https://wa.me/243852062070" target="_blank" rel="noopener">+243 852 062 070</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-legal">Document interne KTech WiFi — hypothèses de travail non contractuelles. Chiffres susceptibles d'évoluer après devis fournisseurs et test terrain.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
