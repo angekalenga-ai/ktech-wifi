@@ -137,8 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const gateWelcome = document.getElementById('gate-welcome');
 
     const tryUnlock = () => {
-      const code = gateInput.value.trim();
-      const invitedName = INVITATIONS[code];
+      const raw = gateInput.value;
+      const code = raw.trim().toLowerCase();
+      // Comparaison insensible à la casse : "Ktech-Demo" ou "KTECH-DEMO" fonctionnent aussi.
+      const matchKey = Object.keys(INVITATIONS).find(k => k.toLowerCase() === code);
+      const invitedName = matchKey ? INVITATIONS[matchKey] : null;
 
       if (invitedName) {
         gate.hidden = true;
@@ -148,6 +151,9 @@ document.addEventListener('DOMContentLoaded', () => {
           gateWelcome.hidden = false;
         }
       } else {
+        // Affiche ce qui a été reçu, entre guillemets, pour repérer un caractère
+        // invisible ou une faute de frappe (espace, tiret différent, etc.).
+        gateError.textContent = `Code reçu : "${raw}" — incorrect, réessayez.`;
         gateError.hidden = false;
         gateInput.value = '';
         gateInput.focus();
